@@ -86,36 +86,12 @@ Logout.
 Get classification.
 
 + Request
-
     + Headers
-
             Authorization: Bearer <token>
 
 + Response 200 (application/json)
-
     + Attributes (object)
-        + id: 250FF (string, required)
-        + created: 1415203908 (number) - Time stamp
-        + percent_off: 25 (number)
-
-            A positive integer between 1 and 100 that represents the discount
-            the coupon will apply.
-
-        + redeem_by (number) - Date after which the coupon can no longer be redeemed
-
-    + Body
-
-            {
-                result: true
-            }
-
-    + Schema
-
-            {
-                "type": "object",
-                "properties": {
-                    "result": {
-                        "type": "boolean"
-                    }
-                }
-            }
+        + result: true (boolean, required)
+        + kind (enum)
+            + `A`
+            + `B`
