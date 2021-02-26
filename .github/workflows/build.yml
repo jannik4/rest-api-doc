@@ -22,10 +22,10 @@ jobs:
       - name: Build
         run: |
           npm install -g snowboard
-          snowboard html -o ./public API.apib
+          snowboard html -o ./public/rest-api-doc API.apib
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_dir: ./public/rest-api-doc
