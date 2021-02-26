@@ -2,7 +2,7 @@
   "title": "Get a note",
   "description": "Gets a single note by its unique identifier.",
   "permalink": "t~notes~get~notes~id",
-  "uuid": "7qX7yXaJ7rW5snxps1fOO",
+  "uuid": "BDAb0u7lG-2054g9hE81e",
   "method": "GET",
   "path": "/notes/{id}",
   "pathTemplate": "/notes/{id}",
