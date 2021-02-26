@@ -1,8 +1,8 @@
 {
   "title": "Login",
   "description": "Login with username and password.",
-  "permalink": "t~login~post~user1~login",
-  "uuid": "PBXLQGo8GULB_SqiJXxIf",
+  "permalink": "t~user1~login~post~user1~login",
+  "uuid": "1idlOOYLFbvtb5YmoYjwl",
   "method": "POST",
   "path": "/user1/login",
   "pathTemplate": "/user1/login",
@@ -10,7 +10,11 @@
   "meta": {
     "resource": {
       "title": "Login",
-      "permalink": "r~login"
+      "permalink": "r~user1~login"
+    },
+    "group": {
+      "title": "User1",
+      "permalink": "g~user1"
     }
   },
   "transactions": [

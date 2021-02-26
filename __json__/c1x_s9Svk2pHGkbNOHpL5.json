@@ -1,8 +1,8 @@
 {
   "title": "Logout",
   "description": "Logout.",
-  "permalink": "t~logout~post~user1~logout",
-  "uuid": "ksTmA1U5sodGl-QH7LGlQ",
+  "permalink": "t~user1~logout~post~user1~logout",
+  "uuid": "c1x_s9Svk2pHGkbNOHpL5",
   "method": "POST",
   "path": "/user1/logout",
   "pathTemplate": "/user1/logout",
@@ -10,7 +10,11 @@
   "meta": {
     "resource": {
       "title": "Logout",
-      "permalink": "r~logout"
+      "permalink": "r~user1~logout"
+    },
+    "group": {
+      "title": "User1",
+      "permalink": "g~user1"
     }
   },
   "transactions": [
