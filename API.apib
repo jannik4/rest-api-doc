@@ -1,71 +1,28 @@
 FORMAT: 1A
 
-# JSON Schema
-Every request and response can have a schema. Below you will find examples
-using [JSON Schema](http://json-schema.org/) to describe the format of request
-and response body content.
+# Erweiterung
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+amet.
 
+# User1 [/user1]
+User1 ...
 
-# Notes [/notes/{id}]
-
-+ Parameters
-
-    + id: abc123 (required) - Unique identifier for a note
-
-## Get a note [GET]
-Gets a single note by its unique identifier.
-
-+ Response 200 (application/json)
-
-    + Body
-
-            {
-                "id": "abc123",
-                "title": "This is a note",
-                "content": "This is the note content."
-                "tags": [
-                    "todo",
-                    "home"
-                ]
-            }
-
-    + Schema
-
-            {
-                "type": "object",
-                "properties": {
-                    "id": {
-                        "type": "string"
-                    },
-                    "title": {
-                        "type": "string"
-                    },
-                    "content": {
-                        "type": "string"
-                    },
-                    "tags": {
-                        "type": "array",
-                        "items": {
-                            "type": "string"
-                        }
-                    }
-                }
-            }
-
-## Update a note [PATCH]
-Modify a note's data using its unique identifier. You can edit the `title`,
-`content`, and `tags`.
+## Login [POST /login]
+Login with username and password.
 
 + Request (application/json)
 
     + Body
 
             {
-                "title": "This is another note",
-                "tags": [
-                    "todo",
-                    "work"
-                ]
+                "username": "Peter",
+                "password": "1234Hallo"
             }
 
     + Schema
@@ -73,20 +30,84 @@ Modify a note's data using its unique identifier. You can edit the `title`,
             {
                 "type": "object",
                 "properties": {
-                    "title": {
+                    "username": {
                         "type": "string"
                     },
-                    "content": {
+                    "password": {
                         "type": "string"
-                    },
-                    "tags": {
-                        "type": "array",
-                        "items": {
-                            "type": "string"
-                        }
                     }
-                },
-                "additionalProperties": false
+                }
             }
 
-+ Response 204
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "token": "wn5934zn5vc973n4zc5384z5tzn349nzt3"
+            }
+
+    + Schema
+
+            {
+                "type": "object",
+                "properties": {
+                    "token": {
+                        "type": "string"
+                    }
+                }
+            }
+
+## Logout [POST /logout]
+Logout.
+
++ Request
+
+    + Headers
+
+            Authorization: Bearer <token>
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                
+            }
+
+    + Schema
+
+            {
+                "type": "object",
+                "properties": {
+                    
+                }
+            }
+
+## Get classification [GET /get-classification]
+Get classification.
+
++ Request
+
+    + Headers
+
+            Authorization: Bearer <token>
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                result: true
+            }
+
+    + Schema
+
+            {
+                "type": "object",
+                "properties": {
+                    "result": {
+                        "type": "boolean"
+                    }
+                }
+            }
