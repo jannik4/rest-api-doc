@@ -1,20 +1,16 @@
 {
   "title": "Get classification",
   "description": "Get classification.",
-  "permalink": "t~user1~get~classification~get~user1~get-classification",
-  "uuid": "FSarg2sa3zQHYUP0CyGwU",
+  "permalink": "t~user1~get~user1~get-classification",
+  "uuid": "w-soiXJe25LDR24LnRiI1",
   "method": "GET",
   "path": "/user1/get-classification",
   "pathTemplate": "/user1/get-classification",
   "parameters": [],
   "meta": {
     "resource": {
-      "title": "Get classification",
-      "permalink": "r~user1~get~classification"
-    },
-    "group": {
       "title": "User1",
-      "permalink": "g~user1"
+      "permalink": "r~user1"
     }
   },
   "transactions": [
