@@ -10,88 +10,41 @@ aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
 rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
 amet.
 
-# User1 [/user1]
+# User1
 User1 ...
 
-## Login [POST /login]
+## Login [POST /user1/login]
 Login with username and password.
 
 + Request (application/json)
-    + Body
-        {
-            "username": "Peter",
-            "password": "1234Hallo"
-        }
-
-    + Schema
-
-            {
-                "type": "object",
-                "properties": {
-                    "username": {
-                        "type": "string"
-                    },
-                    "password": {
-                        "type": "string"
-                    }
-                }
-            }
+    + Attributes (object)
+        + username: Peter (string, required)
+        + password: 1234Hallo (string, required)
 
 + Response 200 (application/json)
+    + Attributes (object)
+        + token: wn5934zn5vc973n4zc5384z5tzn349nzt3 (string, required)
 
-    + Body
-
-            {
-                "token": "wn5934zn5vc973n4zc5384z5tzn349nzt3"
-            }
-
-    + Schema
-
-            {
-                "type": "object",
-                "properties": {
-                    "token": {
-                        "type": "string"
-                    }
-                }
-            }
-
-## Logout [POST /logout]
+## Logout [POST /user1/logout]
 Logout.
 
 + Request
-
     + Headers
-
-            Authorization: Bearer <token>
+        Authorization: Bearer <token>
 
 + Response 200 (application/json)
+    + Attributes (object)
 
-    + Body
-
-            {
-                
-            }
-
-    + Schema
-
-            {
-                "type": "object",
-                "properties": {
-                    
-                }
-            }
-
-## Get classification [GET /get-classification]
+## Get classification [GET /user1/get-classification]
 Get classification.
 
 + Request
     + Headers
-            Authorization: Bearer <token>
+        Authorization: Bearer <token>
 
 + Response 200 (application/json)
     + Attributes (object)
         + result: true (boolean, required)
         + kind (enum)
-            + `A`
-            + `B`
+            + A
+            + B
