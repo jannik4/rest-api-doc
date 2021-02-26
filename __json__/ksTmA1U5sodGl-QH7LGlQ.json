@@ -1,16 +1,16 @@
 {
   "title": "Logout",
   "description": "Logout.",
-  "permalink": "t~user1~post~logout",
-  "uuid": "rUeP-7JEZONT4vn_gdKDW",
+  "permalink": "t~logout~post~user1~logout",
+  "uuid": "ksTmA1U5sodGl-QH7LGlQ",
   "method": "POST",
-  "path": "/logout",
-  "pathTemplate": "/logout",
+  "path": "/user1/logout",
+  "pathTemplate": "/user1/logout",
   "parameters": [],
   "meta": {
     "resource": {
-      "title": "User1",
-      "permalink": "r~user1"
+      "title": "Logout",
+      "permalink": "r~logout"
     }
   },
   "transactions": [
@@ -45,8 +45,8 @@
             }
           }
         ],
-        "body": "{\n\n}\n",
-        "schema": "{\n    \"type\": \"object\",\n    \"properties\": {\n\n    }\n}\n"
+        "body": "{}",
+        "schema": "{\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"type\": \"object\"\n}"
       }
     }
   ]

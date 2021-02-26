@@ -1,16 +1,16 @@
 {
   "title": "Login",
   "description": "Login with username and password.",
-  "permalink": "t~user1~post~login",
-  "uuid": "ik_Fq5FeF1NHnCHKKJ0R4",
+  "permalink": "t~login~post~user1~login",
+  "uuid": "PBXLQGo8GULB_SqiJXxIf",
   "method": "POST",
-  "path": "/login",
-  "pathTemplate": "/login",
+  "path": "/user1/login",
+  "pathTemplate": "/user1/login",
   "parameters": [],
   "meta": {
     "resource": {
-      "title": "User1",
-      "permalink": "r~user1"
+      "title": "Login",
+      "permalink": "r~login"
     }
   },
   "transactions": [
@@ -30,8 +30,8 @@
             }
           }
         ],
-        "body": "{\n    \"username\": \"Peter\",\n    \"password\": \"1234Hallo\"\n}\n",
-        "schema": "{\n    \"type\": \"object\",\n    \"properties\": {\n        \"username\": {\n            \"type\": \"string\"\n        },\n        \"password\": {\n            \"type\": \"string\"\n        }\n    }\n}\n"
+        "body": "{\n  \"username\": \"Peter\",\n  \"password\": \"1234Hallo\"\n}",
+        "schema": "{\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"username\": {\n      \"type\": \"string\"\n    },\n    \"password\": {\n      \"type\": \"string\"\n    }\n  },\n  \"required\": [\n    \"username\",\n    \"password\"\n  ]\n}"
       },
       "response": {
         "title": "",
@@ -48,8 +48,8 @@
             }
           }
         ],
-        "body": "{\n    \"token\": \"wn5934zn5vc973n4zc5384z5tzn349nzt3\"\n}\n",
-        "schema": "{\n    \"type\": \"object\",\n    \"properties\": {\n        \"token\": {\n            \"type\": \"string\"\n        }\n    }\n}\n"
+        "body": "{\n  \"token\": \"wn5934zn5vc973n4zc5384z5tzn349nzt3\"\n}",
+        "schema": "{\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"token\": {\n      \"type\": \"string\"\n    }\n  },\n  \"required\": [\n    \"token\"\n  ]\n}"
       }
     }
   ]
