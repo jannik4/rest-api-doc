@@ -2,7 +2,7 @@
   "title": "Login",
   "description": "Login with username and password.",
   "permalink": "t~user1~post~login",
-  "uuid": "OOZjRFePAXlFkjysLgotA",
+  "uuid": "WemcQVxCIKTCE7C5aO0Rq",
   "method": "POST",
   "path": "/login",
   "pathTemplate": "/login",

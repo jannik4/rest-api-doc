@@ -1,11 +1,11 @@
 {
-  "title": "Logout",
-  "description": "Logout.",
-  "permalink": "t~user1~post~logout",
-  "uuid": "EYlMScS0ChAMPGOx7zmlS",
-  "method": "POST",
-  "path": "/logout",
-  "pathTemplate": "/logout",
+  "title": "Get classification",
+  "description": "Get classification.",
+  "permalink": "t~user1~get~get-classification",
+  "uuid": "cqjeqAJ9dwFeWOXeoAETd",
+  "method": "GET",
+  "path": "/get-classification",
+  "pathTemplate": "/get-classification",
   "parameters": [],
   "meta": {
     "resource": {
@@ -18,7 +18,7 @@
       "request": {
         "title": "",
         "description": "",
-        "method": "POST",
+        "method": "GET",
         "headers": [
           {
             "name": "Authorization",
@@ -45,8 +45,8 @@
             }
           }
         ],
-        "body": "{\n\n}\n",
-        "schema": "{\n    \"type\": \"object\",\n    \"properties\": {\n\n    }\n}\n"
+        "body": "{\n    result: true\n}\n",
+        "schema": "{\n    \"type\": \"object\",\n    \"properties\": {\n        \"result\": {\n            \"type\": \"boolean\"\n        }\n    }\n}\n"
       }
     }
   ]
