@@ -2,7 +2,7 @@
   "title": "Logout",
   "description": "Logout.",
   "permalink": "t~user1~post~logout",
-  "uuid": "SqhRQ9JWWgVtirFjo-j5e",
+  "uuid": "rUeP-7JEZONT4vn_gdKDW",
   "method": "POST",
   "path": "/logout",
   "pathTemplate": "/logout",

@@ -2,7 +2,7 @@
   "title": "Get classification",
   "description": "Get classification.",
   "permalink": "t~user1~get~get-classification",
-  "uuid": "cqjeqAJ9dwFeWOXeoAETd",
+  "uuid": "29YIuMCfK7Qgq_67UgdT8",
   "method": "GET",
   "path": "/get-classification",
   "pathTemplate": "/get-classification",
@@ -45,8 +45,8 @@
             }
           }
         ],
-        "body": "{\n    result: true\n}\n",
-        "schema": "{\n    \"type\": \"object\",\n    \"properties\": {\n        \"result\": {\n            \"type\": \"boolean\"\n        }\n    }\n}\n"
+        "body": "{\n  \"result\": true,\n  \"kind\": \"A\"\n}",
+        "schema": "{\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"result\": {\n      \"type\": \"boolean\"\n    },\n    \"kind\": {\n      \"enum\": [\n        \"A\",\n        \"B\"\n      ]\n    }\n  },\n  \"required\": [\n    \"result\"\n  ]\n}"
       }
     }
   ]
