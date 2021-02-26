@@ -2,7 +2,7 @@
   "title": "Update a note",
   "description": "Modify a note's data using its unique identifier. You can edit the `title`,\n`content`, and `tags`.",
   "permalink": "t~notes~patch~notes~id",
-  "uuid": "Y2IhDQ4rqWsmRAQOsGpeD",
+  "uuid": "U35V28iQmGuvG7ZT9iigL",
   "method": "PATCH",
   "path": "/notes/{id}",
   "pathTemplate": "/notes/{id}",
