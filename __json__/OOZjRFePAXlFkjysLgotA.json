@@ -1,0 +1,56 @@
+{
+  "title": "Login",
+  "description": "Login with username and password.",
+  "permalink": "t~user1~post~login",
+  "uuid": "OOZjRFePAXlFkjysLgotA",
+  "method": "POST",
+  "path": "/login",
+  "pathTemplate": "/login",
+  "parameters": [],
+  "meta": {
+    "resource": {
+      "title": "User1",
+      "permalink": "r~user1"
+    }
+  },
+  "transactions": [
+    {
+      "request": {
+        "title": "",
+        "description": "",
+        "method": "POST",
+        "contentType": "application/json",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "example": "application/json",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "body": "{\n    \"username\": \"Peter\",\n    \"password\": \"1234Hallo\"\n}\n",
+        "schema": "{\n    \"type\": \"object\",\n    \"properties\": {\n        \"username\": {\n            \"type\": \"string\"\n        },\n        \"password\": {\n            \"type\": \"string\"\n        }\n    }\n}\n"
+      },
+      "response": {
+        "title": "",
+        "description": "",
+        "statusCode": "200",
+        "contentType": "application/json",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "example": "application/json",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "body": "{\n    \"token\": \"wn5934zn5vc973n4zc5384z5tzn349nzt3\"\n}\n",
+        "schema": "{\n    \"type\": \"object\",\n    \"properties\": {\n        \"token\": {\n            \"type\": \"string\"\n        }\n    }\n}\n"
+      }
+    }
+  ]
+}

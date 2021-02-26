@@ -1,0 +1,53 @@
+{
+  "title": "Get classification",
+  "description": "Get classification.",
+  "permalink": "t~user1~get~get-classification",
+  "uuid": "0IWuCh2wryu_lOorIvg-q",
+  "method": "GET",
+  "path": "/get-classification",
+  "pathTemplate": "/get-classification",
+  "parameters": [],
+  "meta": {
+    "resource": {
+      "title": "User1",
+      "permalink": "r~user1"
+    }
+  },
+  "transactions": [
+    {
+      "request": {
+        "title": "",
+        "description": "",
+        "method": "GET",
+        "headers": [
+          {
+            "name": "Authorization",
+            "example": "Bearer <token>",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "response": {
+        "title": "",
+        "description": "",
+        "statusCode": "200",
+        "contentType": "application/json",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "example": "application/json",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "body": "{\n    result: true\n}\n",
+        "schema": "{\n    \"type\": \"object\",\n    \"properties\": {\n        \"result\": {\n            \"type\": \"boolean\"\n        }\n    }\n}\n"
+      }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "title": "Logout",
+  "description": "Logout.",
+  "permalink": "t~user1~post~logout",
+  "uuid": "EYlMScS0ChAMPGOx7zmlS",
+  "method": "POST",
+  "path": "/logout",
+  "pathTemplate": "/logout",
+  "parameters": [],
+  "meta": {
+    "resource": {
+      "title": "User1",
+      "permalink": "r~user1"
+    }
+  },
+  "transactions": [
+    {
+      "request": {
+        "title": "",
+        "description": "",
+        "method": "POST",
+        "headers": [
+          {
+            "name": "Authorization",
+            "example": "Bearer <token>",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "response": {
+        "title": "",
+        "description": "",
+        "statusCode": "200",
+        "contentType": "application/json",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "example": "application/json",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "body": "{\n\n}\n",
+        "schema": "{\n    \"type\": \"object\",\n    \"properties\": {\n\n    }\n}\n"
+      }
+    }
+  ]
+}
