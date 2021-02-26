@@ -1,0 +1,55 @@
+{
+  "title": "Update a note",
+  "description": "Modify a note's data using its unique identifier. You can edit the `title`,\n`content`, and `tags`.",
+  "permalink": "t~notes~patch~notes~id",
+  "uuid": "ctlavuSQLHYBPCcCd5N58",
+  "method": "PATCH",
+  "path": "/notes/{id}",
+  "pathTemplate": "/notes/{id}",
+  "parameters": [
+    {
+      "location": "path",
+      "name": "id",
+      "description": "Unique identifier for a note",
+      "required": true,
+      "example": "abc123",
+      "schema": {
+        "type": ""
+      }
+    }
+  ],
+  "meta": {
+    "resource": {
+      "title": "Notes",
+      "permalink": "r~notes"
+    }
+  },
+  "transactions": [
+    {
+      "request": {
+        "title": "",
+        "description": "",
+        "method": "PATCH",
+        "contentType": "application/json",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "example": "application/json",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "body": "{\n    \"title\": \"This is another note\",\n    \"tags\": [\n        \"todo\",\n        \"work\"\n    ]\n}\n",
+        "schema": "{\n    \"type\": \"object\",\n    \"properties\": {\n        \"title\": {\n            \"type\": \"string\"\n        },\n        \"content\": {\n            \"type\": \"string\"\n        },\n        \"tags\": {\n            \"type\": \"array\",\n            \"items\": {\n                \"type\": \"string\"\n            }\n        }\n    },\n    \"additionalProperties\": false\n}\n"
+      },
+      "response": {
+        "title": "",
+        "description": "",
+        "statusCode": "204",
+        "headers": []
+      }
+    }
+  ]
+}
